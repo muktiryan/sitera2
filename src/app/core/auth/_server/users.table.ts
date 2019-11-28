@@ -54,16 +54,16 @@ export class UsersTable {
         },
         {
             id: 3,
-            username: 'bptappera',
+            username: 'bptapera',
             password: 'demo',
-            email: 'bptappera@demo.com',
+            email: 'bptapera@demo.com',
             accessToken: 'access-token-d2dff7b82f784de584b60964abbe45b9',
             refreshToken: 'access-token-c999ccfe74aa40d0aa1a64c5e620c1a5',
             roles: [3], // Guest
             pic: './assets/media/users/default.jpg',
-            fullname: 'BP TAPPERA',
+            fullname: 'BP TAPERA',
             occupation: 'CFO',
-            companyName: 'BP Tappera',
+            companyName: 'BP Tapera',
             phone: '456669067892',
             address: {
                 addressLine: '1467  Griffin Street',

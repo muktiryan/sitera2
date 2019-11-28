@@ -25,7 +25,7 @@ const DEMO_PARAMS = {
     PASSWORD: 'demo'
 };
 const GUEST_PARAMS = {
-    EMAIL: 'bptappera@demo.com',
+    EMAIL: 'bptapera@demo.com',
     PASSWORD: 'demo'
 };
 const PESERTA_PARAMS = {
@@ -178,7 +178,8 @@ export class LoginComponent implements OnInit, OnDestroy {
                 tap(user => {
                     if (user) {
                         this.store.dispatch(new Login({authToken: user.accessToken}));
-                        this.router.navigateByUrl(this.returnUrl); // Main page
+                        // this.router.navigateByUrl(this.returnUrl); // Main page
+                        this.router.navigateByUrl((user.roles[0] === 3) ? this.returnUrl+'bphome' : this.returnUrl);
                     } else {
                         this.authNoticeService.setNotice(this.translate.instant('AUTH.VALIDATION.INVALID_LOGIN'), 'danger');
                     }
