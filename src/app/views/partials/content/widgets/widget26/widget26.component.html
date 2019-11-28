@@ -1,0 +1,21 @@
+<div class="kt-widget26">
+	<div class="kt-widget26__content">
+		<span class="kt-widget26__number">{{value}}</span>
+		<span class="kt-widget26__desc">{{desc}}</span>
+	</div>
+	<div class="kt-widget26__chart" style="height:100px; width: 230px;">
+		<canvas ktSparklineChart [options]="options" id="kt_chart_quick_stats_1"></canvas>
+	</div>
+</div>
+
+<div class="kt-widget14">
+	<div class="kt-widget14__header kt-margin-b-30">
+		<!-- <h3 class="kt-widget14__title">{{title}}</h3> -->
+		<h3 class="kt-widget14__title"><span style="color: #1dc9b7;">{{title1}}</span> VS <span
+				style="color: gray;">{{title2}}</span></h3>
+		<span class="kt-widget14__desc">{{desc}}</span>
+	</div>
+	<div class="kt-widget14__chart" style="height: 25rem;">
+		<canvas #chart></canvas>
+	</div>
+</div>

@@ -1,0 +1,67 @@
+<div class="content  content-fixed">
+  <div class="container">
+    <h4 id="section3" class="mg-b-10">Formulir Pengajuan KPR</h4>
+    <hr class="mg-y-10">
+    <div class="row row-xs">
+      <div class="col-12">
+          <mat-card class="example-card">
+              <mat-card-header>
+                <!-- <img mat-card-avatar src="./assets/media/users/default.jpg" alt="Photo of a Shiba Inu" class="example-header-image">
+                <mat-card-title style="font-family: Poppins;">Justin Bieber</mat-card-title> -->
+              </mat-card-header>
+              <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+              <mat-card-content>
+                <form class="example-form">
+                  <div class="row row-xs">
+                      <div class="col-6">
+                      <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Nama Lengkap" style="text-align: end;" [(ngModel)]="applicant.fullname" name="fullname">
+                    </mat-form-field>
+                    </div>
+                    <div class="col-6">
+                      <mat-form-field class="example-full-width">
+                        <input matInput [matDatepicker]="picker" placeholder="Tanggal Lahir" [(ngModel)]="applicant.dobApplicant" name="dob">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle><mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                    </div>
+                  </div>
+                  <div class="row row-xs">
+                    <div class="col-6">
+                    <mat-form-field class="example-full-width">
+                    <input matInput placeholder="No Telepon/HP" style="text-align: end;" [(ngModel)]="applicant.phone" name="phone">
+                  </mat-form-field>
+                  </div>
+                  <div class="col-6">
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Alamat Email" style="text-align: end;" [(ngModel)]="applicant.email" name="email">
+                  </mat-form-field>
+                  </div>
+                </div>
+                <div class="row row-xs">
+                  <div class="col-6">
+                  <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Nomor KTP" style="text-align: end;" [(ngModel)]="applicant.identitas" name="identitas">
+                </mat-form-field>
+                </div>
+                <div class="col-6">
+                  <mat-select placeholder="Jenis Pembiayaan">
+                    <mat-option [value]=1>
+                      KPR
+                    </mat-option>
+                    <mat-option [value]=2>
+                      KPA
+                    </mat-option>
+                  </mat-select>
+                </div>
+              </div>
+              </form>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>REQUEST</button>
+              </mat-card-actions>
+            </mat-card>
+      </div><!-- col -->
+    </div>
+  </div><!-- container -->
+
+</div>
